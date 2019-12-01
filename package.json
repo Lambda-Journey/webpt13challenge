@@ -1,0 +1,28 @@
+{
+    "name": "WebPT13Challenge",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "scripts": {
+        "start": "gulp"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SebastianGarces/webpt13challenge.git"
+    },
+    "keywords": [],
+    "author": "Sebastian Garces",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/SebastianGarces/webpt13challenge/issues"
+    },
+    "homepage": "https://github.com/SebastianGarces/webpt13challenge#readme",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.0",
+        "gulp-htmlmin": "^5.0.1",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.5"
+    }
+}

@@ -1,0 +1,23 @@
+/* body
+*************/
+
+body {
+    background-color: color(bg);
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    display: flex;
+    align-content: center;
+
+    .cards-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 80%;
+        min-height: 100vh;
+        padding: 1rem 3vw;
+        margin-left: 20%;
+    }
+}
