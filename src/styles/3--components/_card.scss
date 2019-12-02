@@ -21,7 +21,7 @@
 
 .card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(133, 140, 148, 0.5), 0 0 2px #c4c7cc;
+    box-shadow: 0 8px 20px rgba(133, 140, 148, 0.5), 0 0 2px rgba(0, 0, 0, 0.08);
 }
 
 .overlay::after {
