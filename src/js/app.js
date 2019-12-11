@@ -15,3 +15,11 @@ const pythonCard = document.querySelector(".python");
 const htmlCard = document.querySelector(".html");
 const cssCard = document.querySelector(".css");
 const netlifyCard = document.querySelector(".netlify");
+
+/*
+TODO
+
+-create blog style page for each of the cards with side bar 
+-create filter functionality to main page, sort by category
+
+*/
