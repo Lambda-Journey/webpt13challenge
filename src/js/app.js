@@ -21,5 +21,6 @@ TODO
 
 -create blog style page for each of the cards with side bar 
 -create filter functionality to main page, sort by category
+		*if element's class is != selection, display none
 
 */
