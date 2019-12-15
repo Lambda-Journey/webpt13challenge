@@ -1,6 +1,7 @@
 const [navLinkLang, navLinkFrame, navLinkTools] = document.querySelectorAll(
 	".sidebar a"
 );
+const navLinks = document.querySelectorAll(".sidebar a");
 
 const allCards = document.querySelectorAll(".card");
 
