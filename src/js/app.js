@@ -1,5 +1,3 @@
-// import { cardsData } from "../data/cards.js"
-
 const [navLinkLang, navLinkFrame, navLinkTools] = document.querySelectorAll(
 	".sidebar a"
 );
@@ -27,15 +25,29 @@ TODO
 		*if element's class is != selection, display none
 
 */
+const cardsContainer = document.querySelector(".cards-container");
 
-const createCard = cardObject => {
+const createCard = cardObj => {
 	const card = document.createElement("div");
 	const cardSvg = document.createElement("svg");
 	const svgPath = document.createElement("path");
 
-	card.classList.add("card", "overlay", cardObject.name);
+	card.classList.add("card", "overlay", cardObj.name);
 	card.appendChild(cardSvg);
 	cardSvg.appendChild(svgPath);
 
+	cardSvg.setAttribute("xmlns", cardObj.svg.xmlns);
+	cardSvg.setAttribute("width", cardObj.svg.width);
+	cardSvg.setAttribute("height", cardObj.svg.height);
+	cardSvg.setAttribute("viewBox", cardObj.svg.viewBox);
+
+	svgPath.setAttribute("d", cardObj.svg.path.d);
+	svgPath.setAttribute("transform", cardObj.svg.path.transform);
+	svgPath.setAttribute("fill", cardObj.svg.path.fill);
+	svgPath.setAttribute("stroke", cardObj.svg.path.stroke);
+	svgPath.setAttribute("stroke-width", cardObj.svg.path["stroke-width"]);
+
 	return card;
 };
+
+cardsData.forEach(card => cardsContainer.appendChild(createCard(card)));
