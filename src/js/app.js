@@ -1,3 +1,5 @@
+// import { cardsData } from "../data/cards.js"
+
 const [navLinkLang, navLinkFrame, navLinkTools] = document.querySelectorAll(
 	".sidebar a"
 );
@@ -20,8 +22,20 @@ const netlifyCard = document.querySelector(".netlify");
 /*
 TODO
 
--create blog style page for each of the cards with side bar 
+-create blog style page for each of the cards with side bar
 -create filter functionality to main page, sort by category
 		*if element's class is != selection, display none
 
 */
+
+const createCard = cardObject => {
+	const card = document.createElement("div");
+	const cardSvg = document.createElement("svg");
+	const svgPath = document.createElement("path");
+
+	card.classList.add("card", "overlay", cardObject.name);
+	card.appendChild(cardSvg);
+	cardSvg.appendChild(svgPath);
+
+	return card;
+};
