@@ -29,12 +29,14 @@ const cardsContainer = document.querySelector(".cards-container");
 
 const createCard = cardObj => {
 	const card = document.createElement("div");
-	const cardSvg = document.createElement("svg");
-	const svgPath = document.createElement("path");
-
-	card.classList.add("card", "overlay", cardObj.name);
-	card.appendChild(cardSvg);
-	cardSvg.appendChild(svgPath);
+	const cardSvg = document.createElementNS(
+		"http://www.w3.org/2000/svg",
+		"svg"
+	);
+	const svgPath = document.createElementNS(
+		"http://www.w3.org/2000/svg",
+		"path"
+	);
 
 	cardSvg.setAttribute("xmlns", cardObj.svg.xmlns);
 	cardSvg.setAttribute("width", cardObj.svg.width);
@@ -46,6 +48,10 @@ const createCard = cardObj => {
 	svgPath.setAttribute("fill", cardObj.svg.path.fill);
 	svgPath.setAttribute("stroke", cardObj.svg.path.stroke);
 	svgPath.setAttribute("stroke-width", cardObj.svg.path["stroke-width"]);
+
+	card.classList.add("card", "overlay", cardObj.name);
+	cardSvg.appendChild(svgPath);
+	card.appendChild(cardSvg);
 
 	return card;
 };
