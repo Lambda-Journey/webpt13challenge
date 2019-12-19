@@ -14,7 +14,8 @@ const cardsData = [
 				stroke: "rgba(0,0,0,0.07)",
 				"stroke-width": "1"
 			}
-		}
+		},
+		type: "framework"
 	},
 	{
 		name: "react",
@@ -31,7 +32,8 @@ const cardsData = [
 				stroke: "rgba(0,0,0,0.07)",
 				"stroke-width": "1"
 			}
-		}
+		},
+		type: "freamework"
 	},
 	{
 		name: "vue",
@@ -48,7 +50,8 @@ const cardsData = [
 				stroke: "rgba(0,0,0,0.07)",
 				"stroke-width": "1"
 			}
-		}
+		},
+		type: "framework"
 	},
 	{
 		name: "git",
@@ -65,7 +68,8 @@ const cardsData = [
 				stroke: "rgba(0,0,0,0.07)",
 				"stroke-width": "1"
 			}
-		}
+		},
+		type: "tool"
 	},
 	{
 		name: "gitlab",
@@ -82,7 +86,8 @@ const cardsData = [
 				stroke: "rgba(0,0,0,0.07)",
 				"stroke-width": "1"
 			}
-		}
+		},
+		type: "tool"
 	},
 	{
 		name: "js",
@@ -99,7 +104,8 @@ const cardsData = [
 				stroke: "rgba(0,0,0,0.07)",
 				"stroke-width": "1"
 			}
-		}
+		},
+		type: "language"
 	},
 	{
 		name: "node",
@@ -116,7 +122,8 @@ const cardsData = [
 				stroke: "rgba(0,0,0,0.07)",
 				"stroke-width": "1"
 			}
-		}
+		},
+		type: "language"
 	},
 	{
 		name: "vscode",
@@ -133,7 +140,8 @@ const cardsData = [
 				stroke: "rgba(0,0,0,0.07)",
 				"stroke-width": "1"
 			}
-		}
+		},
+		type: "tool"
 	},
 	{
 		name: "python",
@@ -150,7 +158,8 @@ const cardsData = [
 				stroke: "rgba(0,0,0,0.07)",
 				"stroke-width": "1"
 			}
-		}
+		},
+		type: "language"
 	},
 	{
 		name: "html",
@@ -167,7 +176,8 @@ const cardsData = [
 				stroke: "rgba(0,0,0,0.07)",
 				"stroke-width": "1"
 			}
-		}
+		},
+		type: "language"
 	},
 	{
 		name: "css",
@@ -184,7 +194,8 @@ const cardsData = [
 				stroke: "rgba(0,0,0,0.07)",
 				"stroke-width": "1"
 			}
-		}
+		},
+		type: "language"
 	},
 	{
 		name: "netlify",
@@ -201,6 +212,7 @@ const cardsData = [
 				stroke: "rgba(0,0,0,0.07)",
 				"stroke-width": "1"
 			}
-		}
+		},
+		type: "tool"
 	}
 ];

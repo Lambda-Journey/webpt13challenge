@@ -49,7 +49,7 @@ const createCard = cardObj => {
 	svgPath.setAttribute("stroke", cardObj.svg.path.stroke);
 	svgPath.setAttribute("stroke-width", cardObj.svg.path["stroke-width"]);
 
-	card.classList.add("card", "overlay", cardObj.name);
+	card.classList.add("card", "overlay", cardObj.name, cardObj.type);
 	cardSvg.appendChild(svgPath);
 	card.appendChild(cardSvg);
 
@@ -57,3 +57,13 @@ const createCard = cardObj => {
 };
 
 cardsData.forEach(card => cardsContainer.appendChild(createCard(card)));
+
+const addEventListeners = (element, eventsArray, callback) => {
+	return eventsArray.forEach(event => {
+		element.addEventListener(event, callback);
+	});
+};
+
+addEventListeners(navLinkLang, ["click", "selected", "focus", "active"], () => {
+	navLinkLang.style.backgroundColor = "red";
+});
